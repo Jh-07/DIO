@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos  align items</title>
+    <style>
+    .flex-container{
+        max-width: 350px;
+        border:1px solid black;
+        margin: 0;
+        display: flex;
+    }
+    .item{
+            background-color: blueviolet;
+            margin: 5px;
+            text-align: center;
+            color: white;
+            flex:1;
+    }
+    
+    .center{
+        align-items: center;
+    }
+    .stretch{
+        align-items: stretch;
+    }
+    .start{
+        align-items: flex-start;
+    }
+    .end{
+        align-items: flex-end;
+    }
+    .base{
+        align-items: baseline;
+    }
+
+    .columns{
+        flex-direction: column;
+    }
+
+    </style>
+</head>
+<body>
+    <h1>Rows</h1>
+    <h2>Normal Rows</h2>
+    <section class="flex-container">
+        <div class="item">1</div>
+        <div class="item">Lorem Ipsum dolor sit amet</div>
+        <div class="item">3 eita bixo lol ratinhoooo iiirraa</div>
+    </section>
+    
+    <h2>Alterações Rows</h2>
+    <section class="flex-container center">
+        <div class="item">1</div>
+        <div class="item">Lorem Ipsum dolor sit amet</div>
+        <div class="item">3 eita bixo lol ratinhoooo iiirraa</div>
+    </section>
+
+    <section class="flex-container stretch">
+        <div class="item">1</div>
+        <div class="item">Lorem Ipsum dolor sit amet</div>
+        <div class="item">3 eita bixo lol ratinhoooo iiirraa</div>
+    </section>
+
+    <section class="flex-container start">
+        <div class="item">1</div>
+        <div class="item">Lorem Ipsum dolor sit amet</div>
+        <div class="item">3 eita bixo lol ratinhoooo iiirraa</div>
+    </section>
+
+    <section class="flex-container end">
+        <div class="item">1</div>
+        <div class="item">Lorem Ipsum dolor sit amet</div>
+        <div class="item">3 eita bixo lol ratinhoooo iiirraa</div>
+    </section>
+
+    <section class="flex-container base">
+        <div class="item"><br>1</div>
+        <div class="item">Lorem Ipsum dolor sit amet</div>
+        <div class="item">3 eita bixo lol ratinhoooo iiirraa</div>
+    </section>
+
+    <h1>Columns</h1>
+    <h2>Normal Columns</h2>
+    <section class="flex-container columns">
+        <div class="item">1</div>
+        <div class="item">Lorem Ipsum dolor sit amet</div>
+        <div class="item">3 eita bixo lol ratinhoooo iiirraa</div>
+    </section>
+    <h2>Alterações Columns</h2>
+    <section class="flex-container center columns">
+        <div class="item">1</div>
+        <div class="item">Lorem Ipsum dolor sit amet</div>
+        <div class="item">3 eita bixo lol ratinhoooo iiirraa</div>
+    </section>
+
+    <section class="flex-container stretch columns">
+        <div class="item">1</div>
+        <div class="item">Lorem Ipsum dolor sit amet</div>
+        <div class="item">3 eita bixo lol ratinhoooo iiirraa</div>
+    </section>
+
+    <section class="flex-container start columns">
+        <div class="item">1</div>
+        <div class="item">Lorem Ipsum dolor sit amet</div>
+        <div class="item">3 eita bixo lol ratinhoooo iiirraa</div>
+    </section>
+
+    <section class="flex-container end columns">
+        <div class="item">1</div>
+        <div class="item">Lorem Ipsum dolor sit amet</div>
+        <div class="item">3 eita bixo lol ratinhoooo iiirraa</div>
+    </section>
+
+    <section class="flex-container base columns">
+        <div class="item"><br>1</div>
+        <div class="item">Lorem Ipsum dolor sit amet</div>
+        <div class="item">3 eita bixo lol ratinhoooo iiirraa</div>
+    </section>
+    
+</body>
+</html>
