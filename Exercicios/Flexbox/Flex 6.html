@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos Align content</title>
+    <style>
+        .flex-container {
+            height: 400px;
+            max-width: 300px;
+            border: 1px solid black;
+            margin: 5px auto;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .item {
+            background-color: firebrick;
+            padding: 0 5px;
+            text-align: center;
+            color: white;
+            flex: 1;
+            border: 1px dotted;
+            margin: 5px;
+        }
+
+        .center {
+            align-content: center;
+        }
+
+        .stretch {
+            align-content: stretch;
+        }
+
+        .start {
+            align-content: flex-start;
+        }
+
+        .end {
+            align-content: flex-end;
+        }
+
+        .base {
+            align-content: baseline;
+        }
+        .around{
+            align-content: space-around;
+        }
+        .between{
+            align-content: space-between;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Normal</h1>
+    <section class="flex-container">
+        <div class="item">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce urna arcu, blandit nec
+            vulputate eget, ornare quis sapien. </div>
+        <div class="item">Donec rutrum nec sem a pretium.</div>
+        <div class="item">Vestibulum ante ipsum primis in faucibus orci luctus et ultrices</div>
+        <div class="item">posuere cubilia curae</div>
+        <div class="item">Etiam id turpis suscipit, elementum diam eget,  </div>
+        <div class="item">Mauris volutpat, mi id rhoncus hendrerit, erat eros </div>
+        <div class="item">efficitur hendrerit quam lectus non nibh</div>
+    </section>
+    
+    <h1>Alterações</h1>
+    <section class="flex-container stretch">
+        <div class="item">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce urna arcu, blandit nec
+            vulputate eget, ornare quis sapien. </div>
+        <div class="item">Donec rutrum nec sem a pretium.</div>
+        <div class="item">Vestibulum ante ipsum primis in faucibus orci luctus et ultrices</div>
+        <div class="item">posuere cubilia curae</div>
+        <div class="item">Etiam id turpis suscipit, elementum diam eget,  </div>
+        <div class="item">Mauris volutpat, mi id rhoncus hendrerit, erat eros </div>
+        <div class="item">efficitur hendrerit quam lectus non nibh</div>
+    </section>
+
+    <section class="flex-container center">
+        <div class="item">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce urna arcu, blandit nec
+            vulputate eget, ornare quis sapien. </div>
+        <div class="item">Donec rutrum nec sem a pretium.</div>
+        <div class="item">Vestibulum ante ipsum primis in faucibus orci luctus et ultrices</div>
+        <div class="item">posuere cubilia curae</div>
+        <div class="item">Etiam id turpis suscipit, elementum diam eget,  </div>
+        <div class="item">Mauris volutpat, mi id rhoncus hendrerit, erat eros </div>
+        <div class="item">efficitur hendrerit quam lectus non nibh</div>
+    </section>
+
+    <section class="flex-container end">
+        <div class="item">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce urna arcu, blandit nec
+            vulputate eget, ornare quis sapien. </div>
+        <div class="item">Donec rutrum nec sem a pretium.</div>
+        <div class="item">Vestibulum ante ipsum primis in faucibus orci luctus et ultrices</div>
+        <div class="item">posuere cubilia curae</div>
+        <div class="item">Etiam id turpis suscipit, elementum diam eget,  </div>
+        <div class="item">Mauris volutpat, mi id rhoncus hendrerit, erat eros </div>
+        <div class="item">efficitur hendrerit quam lectus non nibh</div>
+    </section>
+
+    <section class="flex-container start">
+        <div class="item">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce urna arcu, blandit nec
+            vulputate eget, ornare quis sapien. </div>
+        <div class="item">Donec rutrum nec sem a pretium.</div>
+        <div class="item">Vestibulum ante ipsum primis in faucibus orci luctus et ultrices</div>
+        <div class="item">posuere cubilia curae</div>
+        <div class="item">Etiam id turpis suscipit, elementum diam eget,  </div>
+        <div class="item">Mauris volutpat, mi id rhoncus hendrerit, erat eros </div>
+        <div class="item">efficitur hendrerit quam lectus non nibh</div>
+    </section> 
+
+    <section class="flex-container base">
+        <div class="item">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce urna arcu, blandit nec
+            vulputate eget, ornare quis sapien. </div>
+        <div class="item">Donec rutrum nec sem a pretium.</div>
+        <div class="item">Vestibulum ante ipsum primis in faucibus orci luctus et ultrices</div>
+        <div class="item">posuere cubilia curae</div>
+        <div class="item">Etiam id turpis suscipit, elementum diam eget,  </div>
+        <div class="item">Mauris volutpat, mi id rhoncus hendrerit, erat eros </div>
+        <div class="item">efficitur hendrerit quam lectus non nibh</div>
+    </section>
+
+    <section class="flex-container around">
+        <div class="item">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce urna arcu, blandit nec
+            vulputate eget, ornare quis sapien. </div>
+        <div class="item">Donec rutrum nec sem a pretium.</div>
+        <div class="item">Vestibulum ante ipsum primis in faucibus orci luctus et ultrices</div>
+        <div class="item">posuere cubilia curae</div>
+        <div class="item">Etiam id turpis suscipit, elementum diam eget,  </div>
+        <div class="item">Mauris volutpat, mi id rhoncus hendrerit, erat eros </div>
+        <div class="item">efficitur hendrerit quam lectus non nibh</div>
+    </section>
+
+    <section class="flex-container between">
+        <div class="item">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce urna arcu, blandit nec
+            vulputate eget, ornare quis sapien. </div>
+        <div class="item">Donec rutrum nec sem a pretium.</div>
+        <div class="item">Vestibulum ante ipsum primis in faucibus orci luctus et ultrices</div>
+        <div class="item">posuere cubilia curae</div>
+        <div class="item">Etiam id turpis suscipit, elementum diam eget,  </div>
+        <div class="item">Mauris volutpat, mi id rhoncus hendrerit, erat eros </div>
+        <div class="item">efficitur hendrerit quam lectus non nibh</div>
+    </section>
+
+
+</body>
+
+</html>
