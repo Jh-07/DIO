@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Basis</title>
+    <style>
+        .flex-contaniner{
+            display: flex  ;
+            border: 1px solid black;
+            max-width: 300px;
+        }
+        .items{
+            background-color: tomato;
+            color: white;
+            text-align: center;
+            margin: 5px;
+        }
+
+        .bauto{
+            flex-basis: 0;
+        }
+
+        .fg1{
+            flex-grow: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="flex-contaniner">
+        <div class="items">A</div>
+        <div class="items">BBB</div>
+        <div class="items">C</div>
+        <div class="items">DDD</div>
+    </div>    
+
+    <div class="flex-contaniner">
+        <div class="items bauto fg1">A</div>
+        <div class="items bauto fg1">BBB</div>
+        <div class="items bauto fg1">C</div>
+        <div class="items bauto fg1">DDD d dd</div>
+    </div>    
+</body>
+</html>

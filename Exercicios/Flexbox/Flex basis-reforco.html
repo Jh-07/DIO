@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Basis only</title>
+    <style>
+        .container{
+            display: flex;
+            border: 1px solid black;
+            max-width: 400px;                                     
+        }
+
+        .item{
+            background-color: blue;
+            color: white;
+            margin: 5px;
+            text-align: center;
+        }
+
+        .abasis{
+            flex-basis: auto;
+        }
+        .basis{
+            flex-basis:100px;
+        }
+
+        .fg0{
+            flex-grow: 0;
+        }
+        .fg1 {
+            flex-grow: 1;
+        }
+        .fg2{
+            flex-grow: 2;
+        }
+        .fg3{
+            flex-grow: 3;
+        }
+
+        .fs0{
+            flex-shrink: 0;
+        }
+        .fs1{
+            flex-shrink: 1;
+        }
+        .fs2{
+            flex-shrink: 2;
+        }
+        .fs3{
+            flex-shrink: 3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item basis fg1 fs0">1111111111111111111111111111</div>
+        <div class="item basis fg1 fs1">2</div>
+        <div class="item basis fg1 fs2">3</div>
+        <div class="item basis fg1 fs3">4</div>
+    </div>
+
+    <div class="container">
+        <div class="item basis fg1 ">1</div>
+        <div class="item basis fg1 ">2</div>
+        <div class="item basis fg1 ">3</div>
+        <div class="item basis fg1 ">4</div>
+    </div>
+
+    
+</body>
+</html>
