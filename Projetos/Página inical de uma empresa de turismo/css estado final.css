@@ -1,0 +1,165 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+a{
+    text-decoration: none;
+}
+header{
+    background-color: #122a57;
+    color: #fff;
+    height: 75px;
+    display: flex;
+    align-items: center;
+}
+.flexcontainer{
+    display: flex;
+    max-width: 992px;
+    margin: auto;
+}
+.menu{
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    
+}
+.menulist{
+    justify-content: space-between;
+    min-width: 350px;
+    display: flex;
+}
+.menulist li{
+    list-style: none
+}
+.menulist li a{
+    color: #fff;
+}
+
+.apresentacao{
+    justify-content: space-between;
+    align-items: center;
+    height: 80vh;
+}
+.texto-apresentacao{
+    flex-shrink: 0;
+}
+.texto-apresentacao h1{
+    color: #122a57;
+    margin-bottom: 10px;
+    font-size: 40px;
+}
+.texto-apresentacao p{
+    margin-top: 10px;
+}
+.texto-apresentacao a{
+    border-radius: 30px;
+    background-color: #122a57;
+    color: #fff;
+    display: block;
+    text-align: center;
+    height: 50px;
+    line-height: 3;
+}
+.quemsomos{
+    flex-direction: row-reverse;
+    align-items: center;
+}
+.texto-quemsomos p{
+    margin-bottom: 10px;
+    min-width: 477px;
+}
+.texto-quemsomos h2{
+    color: #122a57;
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+}
+.texto-quemsomos h2::before{
+    background-color: #122a57;
+    content: "";
+    width: 5px;
+    height: 50px;
+    position: relative;
+    margin-right: 5px;
+}
+
+.servicosazul{
+    background-color: #122a57;
+}
+
+.servicotitulo{
+    color: #fff;
+}
+.listaservicos{
+    color: #fff;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.listaservicos a{
+    background-color: #fff;
+    color: #122a57;
+    display: block;
+    text-align: center;
+    border-radius: 30px;
+    font-weight: bold;
+    height: 30px;
+    line-height: 2;
+}
+.listaservicos p{
+    margin-top: 10px;
+    margin-bottom: 10px ;
+    text-align: center;
+}
+.planostitulo{
+    margin-top: 40px;
+}
+.planos{
+    align-items: flex-end;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.planositem{
+    border:5px solid #122a57;
+    padding: 20px;
+
+}
+
+.planositem h3{
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+}
+.planositem h3::after{
+    content: "";
+    background-color: #122a57;
+    width:px;
+    height: 2px;
+}
+.planositem a{
+    margin: 10px;
+    background-color: #122a57;
+    color: #fff;
+    display: block;
+    text-align: center;
+    border-radius: 30px;
+    height: 30px;
+    line-height: 2;
+}
+.planositem ul li{
+    margin-bottom: 10px;
+}
+
+footer{
+    color: #fff;
+    height: 100px;
+    display: flex;
+    background-color: #122a57;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 50vh;
+}
