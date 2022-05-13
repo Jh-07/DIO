@@ -5,8 +5,13 @@ Sets são um tipo de **_Coleção_** em Java parecido com um _Array_ mas tem cer
 
 #### Valores únicos
 exemplos:
+
 ~~~javascript
 const array_comum=[10,20,30,20,40,40,50];
 const demonstraçãoSet = new Set(array_comum);
 console.log(demonstraçãoSet)
 //demonstraçãoSet será igual a [10,20,30,40,50]
+~~~
+## Erros customizáveis
+Existem vários tipos de errors, mas não há diferenças significativas, são mais para melhorar a leitura do código 
+
