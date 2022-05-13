@@ -30,6 +30,8 @@ constructor(parametroFilha1,parametroFilha2,parametroFilha3,parametroFilha4){
 super(parametroFilha1,parametroFilha2,parametroFilha3)
 }
 //Dessa forma os parametrosFilha 1,2 e 3 serão herdados respectivamente dos parametrosPai 1,2 e 3
+const filha1 = new filha (10,20,30,40)
+////Este objeto tera os valores finais como : p1:10 , p2:20 ,p3: 30, f4:40
 ~~~
 O super determina,também, que parametro da classe filha corresponde ao parametro da classe pai.
 No caso acima parametroFilha1(_f1_) corresponde ao parametroPai1(_p1_)
@@ -44,5 +46,8 @@ class filha extends pai{
 constructor(parametroFilha3,parametroFilha2,parametroFilha1,parametroFilha4){
 super(parametroFilha1,parametroFilha2,parametroFilha3)
 }
-//Nesse caso f3 assumirá o valor de p1
+//Nesse caso f3 ,que é o primeiro valor do construtor da classe filha, assumirá o terceiro valor do construtor da classe pai
+
+const filha2 = new filha (10,20,30,40)
+//Este objeto tera os valores finais como : p1:30 , p2:20 ,p3: 10, f4:40
 ~~~
