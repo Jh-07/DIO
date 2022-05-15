@@ -101,5 +101,26 @@ const identificador = document.getElementById("nome do Id")
 identificador.classList.add('adicionando-classe-ao-id')
 ~~~
 
+### Java Assíncrono
+
+#### Promises
+
+Promises são um objeto pré-definido de java que na qual recebem uma "promessa" para serem resolvidas. Devido a essa natureza de 'Espera de resolução' as linhas de código contidas nesse objeto, elas só são  executadas depois que as linhas de código "não-promises" são executadas
+
+
+
+#### Async e Await
+
+Funções **Async** são funções assíncronas na qual envolvem a espera de  alguma **promisse** na sua execução.
+
+~~~javascript
+async function funcaoAssincrona(){
+    console.log('Inicio')
+    const retornoDaPromisse = await Promessa()
+    //O código não continuará a execução até que a promessa seja resolvida
+    console.log('fim')
+}
+~~~
+
 
 
