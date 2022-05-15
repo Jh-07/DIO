@@ -1,0 +1,38 @@
+*{
+   margin: 0;
+   padding: 0;
+   font-family: sans-serif;
+   
+}
+body{
+   display: flex;
+   justify-content: center;
+   height:100vh;
+   width: 100vw;
+   align-items: center;
+   background-color: #fff;
+}
+#centro{
+   text-align: center;
+}
+p{
+   margin-top: 20px;
+   padding: 10px;
+   background-color: black;
+   height: 30px;
+   border: 1px solid;
+   border-radius: 30px;
+   line-height: 2;
+   color: #fff;
+}
+.darkmode-background{
+   background-color: black;
+}
+.darkmode-div h1{
+   color:#fff;
+}
+.darkmode-div p{
+   background-color: #fff;
+   color: black;
+}
+

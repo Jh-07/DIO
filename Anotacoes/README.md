@@ -1,4 +1,4 @@
-﻿# Anotações importantes
+# Anotações importantes
 ## Java
 ### This
 **this** é um método de se referenciar a um objeto e acessar suas chaves e valores
@@ -84,3 +84,22 @@ super(parametroFilha1,parametroFilha2,parametroFilha3)
 const filha2 = new filha (10,20,30,40)
 //Este objeto tera os valores finais como : p1:30 , p2:20 ,p3: 10, f4:40
 ~~~
+
+### Manipulando o D.O.M com Java
+
+#### document.getElementsBy...
+
+Esse método retorna um **_Array_** , então a fim de manipulá-lo, devemos indicar o índice dele (a menos que seja um **.getElementsById**)
+
+ex:
+
+~~~javascript
+const corpo = document.getElementsByTagName('body')
+corpo[0].classList.add('adicionando-classe-ao-corpo')
+
+const identificador = document.getElementById("nome do Id")
+identificador.classList.add('adicionando-classe-ao-id')
+~~~
+
+
+
