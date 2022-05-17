@@ -3,6 +3,10 @@
 ### This
 **this** é um método de se referenciar a um objeto e acessar suas chaves e valores
 
+<font color=red>**Não se usa This em Arrow Functions**</font>
+
+<font color=red>**Não se usa This em Arrow Functions**</font>
+
 ### Sets
 Sets são um tipo de **_Coleção_** em Java parecido com um _Array_ mas tem certas propriedades diferentes.
 
